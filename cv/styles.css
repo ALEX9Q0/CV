@@ -1,0 +1,218 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid white;
+}
+
+header .foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 2px solid white;
+    color: #ffffff;
+}
+
+h2 {
+    margin: 0;
+    padding: 10px 0;
+    color: #4CAF50;
+}
+
+section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-top: 2px solid #4CAF50;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Modo oscuro */
+.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.dark-mode .contenedor {
+    background-color: #444;
+}
+
+.dark-mode header {
+    background-color: #222;
+}
+
+.dark-mode section {
+    background-color: #555;
+}
+
+.dark-mode footer {
+    background-color: #111;
+}
+
+/* Estilos del botón */
+#mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#mode-toggle:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para las barras de progreso */
+.progress-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.progress {
+    background-color: #4CAF50;
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*ssssssssssssssssssss
+/* Estilos para la barra de menú */
+.contact-menu {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Posiciona el ícono en el lado izquierdo */
+    background-color: #4CAF50;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20px;
+}
+
+.menu-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* Estilos para el formulario de contacto */
+.contact-form {
+    position: fixed;
+    bottom: 0;
+    left: 0; /* Posiciona el formulario en el lado izquierdo */
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    border-top-right-radius: 10px; /* Ajustado para que el formulario se vea bien desde el lado izquierdo */
+    border-top-left-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateX(-100%); /* Oculto inicialmente fuera del lado izquierdo */
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+    display: none; /* Ocultado por defecto */
+}
+
+.contact-form.show {
+    display: block;
+    transform: translateX(0); /* Muestra el formulario desde el lado izquierdo */
+}
+
+.contact-form h2 {
+    margin-top: 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+.contact-form .form-message {
+    margin-top: 10px;
+    color: red;
+}
+
+
+
+
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae Ejecutivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <img src="images/roberto2.jpeg" alt="Fotografía del candidato" class="foto">
+            <h1>Roberto Alejandro de la O Aguirre</h1>
+            <p id="contact-info"><br>
+              
+            </p>
+        </header>
+
+        <section>
+            <h2>Formación Académica</h2>
+            <ul>
+                <li><strong>Carrera:</strong> Ingeniería en Sistemas Computacionales</li>
+                <li><strong>Universidad:</strong> Instituto Tecnológico Superior de Jalisco</li>
+                <li><strong>Años de estudio:</strong> 2015 - 2020</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Experiencia Laboral</h2>
+            <div>
+                <h3>Gobierno de Zapopan</h3>
+                <p><strong>Puesto:</strong> Funcionario Público</p>
+                <p><strong>Fechas:</strong> mayo 2024 - Actualidad</p>
+                <p><strong>Responsabilidades:</strong> Desempeñar tareas administrativas y de gestión en el ayuntamiento de Zapopan, Jalisco, contribuyendo al desarrollo y manejo de proyectos gubernamentales y la atención a la ciudadanía.</p>
+            </div>
+            
+            <div>
+                <h3>Cinépolis</h3>
+                <p><strong>Puesto:</strong> Empleado en varias áreas</p>
+                <p><strong>Fechas:</strong> Enero 2020 - Diciembre 2023</p>
+                <p><strong>Responsabilidades:</strong> Manejo de diversas áreas operativas incluyendo taquilla, proyección, dulcería y almacén. Coordinación y atención al cliente en diferentes secciones del cine.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Habilidades</h2>
+            <div class="skill">
+                <p>HTML</p>
+                <div class="progress-bar">
+                    <div class="progress" data-skill="80"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>CSS</p>
+                <div class="progress-bar">
+                    <div class="progress" data-skill="70"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="progress-bar">
+                    <div class="progress" data-skill="60"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Mi currículum fue creado utilizando HTML, CSS y JavaScript.</p>
+        </footer>
+    </div>
+    
+    <!-- Botón para cambiar entre modo oscuro y claro -->
+    <button id="mode-toggle">Cambiar Modo</button>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Barra de menú para mostrar el formulario -->
+    <div id="contact-menu" class="contact-menu">
+        <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Formulario de contacto oculto inicialmente -->
+    <div id="contact-form" class="contact-form">
+        <h2>Formulario de Contacto</h2>
+        <form id="contact">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+            <p class="form-message" id="form-message"></p>
+        </form>
+    </div>
+</body>
+</html>
